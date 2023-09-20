@@ -1,0 +1,21 @@
+{
+  "name": "bigfork/silverstripe-form-idempotency",
+  "description": "Idempotency key support to help prevent duplicate form submissions",
+  "type": "silverstripe-vendormodule",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Loz Calver",
+      "email": "lozcalver@bigfork.co.uk"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "^4|^5",
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bigfork\\SilverstripeFormIdempotency\\": "src/"
+    }
+  }
+}

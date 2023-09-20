@@ -1,0 +1,12 @@
+---
+Name: silverstripe-form-idempotency
+---
+SilverStripe\Forms\Form:
+  extensions:
+    - Bigfork\SilverstripeFormIdempotency\FormExtension
+SilverStripe\Forms\FormRequestHandler:
+  extensions:
+    - Bigfork\SilverstripeFormIdempotency\FormRequestHandlerExtension
+SilverStripe\Core\Injector\Injector:
+  Bigfork\SilverstripeFormIdempotency\FormExtension:
+    type: 'prototype'
