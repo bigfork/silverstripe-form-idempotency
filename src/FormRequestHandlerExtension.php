@@ -15,7 +15,7 @@ class FormRequestHandlerExtension extends Extension
         string $funcName,
         array $vars,
         Form $form,
-        RequestHandler &$subject
+        mixed &$subject
     ): void
     {
         // Not enabled, bail out
@@ -60,7 +60,7 @@ EOF
         string $funcName,
         array $vars,
         Form $form,
-        RequestHandler $subject,
+        mixed $subject,
         mixed &$result
     ): void
     {
